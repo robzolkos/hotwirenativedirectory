@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ruby-rails-postgres
+// Update the VARIANT arg in docker-compose.yml to pick a Ruby version
+{
+  "name": "TurboNativeDirectory",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "containerEnv": {
+    "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}",
+    "GITHUB_USER": "${localEnv:GITHUB_USER}"
+  },
+  "remoteEnv": {
+    "PATH": "/workspace/bin:${containerEnv:PATH}"
+  },
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "rebornix.Ruby",
+        "Shopify.ruby-extensions-pack",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "eamodio.gitlens",
+        "moalamri.inline-fold",
+        "sleistner.vscode-fileutils",
+        "ms-azuretools.vscode-docker",
+        "github.copilot"
+      ]
+    }
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // This can be used to network with other containers or the host.
+  // "forwardPorts": [3000, 5432],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "bundle install --path=/bundle && yarn install",
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "features": {
+    "git": "os-provided",
+    "github-cli": "latest"
+  }
+}
