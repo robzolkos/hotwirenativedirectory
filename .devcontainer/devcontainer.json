@@ -19,7 +19,6 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "rebornix.Ruby",
         "Shopify.ruby-extensions-pack",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
@@ -27,7 +26,8 @@
         "moalamri.inline-fold",
         "sleistner.vscode-fileutils",
         "ms-azuretools.vscode-docker",
-        "github.copilot"
+        "github.copilot",
+        "testdouble.vscode-standard-ruby"
       ]
     }
   },
