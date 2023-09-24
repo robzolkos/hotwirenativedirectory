@@ -5,7 +5,7 @@ image: robzolkos/turbonativedirectory
 servers:
   web:
     hosts:
-      - 198.199.76.129
+      - 157.245.93.20
     labels:
       traefik.http.routers.domain.rule: Host(`turbonative.directory`)
       traefik.http.routers.domain.entrypoints: websecure
