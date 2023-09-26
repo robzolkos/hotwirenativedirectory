@@ -2,7 +2,7 @@
   <%= image_tag "apps/#{image}", class: "aspect-[3/2] w-full rounded-2xl object-cover" %>
   <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900"><%= name %></h3>
   <p class="text-base leading-7 text-gray-600"><%= app_category %></p>
-  <ul role="list" class="mt-2 flex gap-x-6">
+  <ul role="list" class="mt-2 flex gap-x-3">
     <% if ios_url.present? %>
       <li>
         <%= link_to ios_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
