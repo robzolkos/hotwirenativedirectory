@@ -11,6 +11,23 @@
   </head>
 
   <body class="bg-slate-100">
-    <%= yield %>
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:mx-0">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Turbo Native Directory</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Native iOS/Android applications backed by web views.</p>
+        </div>
+
+        <div class="mt-8 border rounded-lg shadow p-4 text-center bg-yellow-100 border-yellow-200 shadow-yellow-700 text-yellow-900">
+          Don't see your app? <%= link_to "Add", "https://github.com/robzolkos/turbonativedirectory/issues/new", target: "_blank", class: "underline font-bold" %> it to the list.
+        </div>
+
+        <%= yield %>
+
+        <footer class="text-center mt-12">
+          ❤️ Made with love by <a href="https://twitter.com/robzolkos" target="_blank" class="text-blue-600 hover:text-blue-700">Rob Zokos</a> and <a href="https://github.com/robzolkos/turbonativedirectory/graphs/contributors" target="_blank" class="text-blue-600 hover:text-blue-700">contributors</a> on <a href="https://github.com/robzolkos/turbonativedirectory/graphs/contributors" target="_blank" class="text-blue-600 hover:text-blue-700">Github</a>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
