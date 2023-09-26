@@ -1,1 +1,52 @@
-<div class="flex justify-center items-center h-screen text-2xl text-red-500">Turbo Native Directory</div>
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Turbo Native Directory</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Native iOS/Android applications backed by web views.</p>
+    </div>
+    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <%= render "app", name: "Basecamp",
+                        app_category: "Project Management",
+                        ios_url: "https://apps.apple.com/us/app/basecamp-project-management/id1015603248",
+                        android_url: "https://play.google.com/store/apps/details?id=com.basecamp.bc3&hl=en_US&gl=US&pli=1",
+                        image: "basecamp.webp"
+                        %>
+      <%= render "app", name: "Hey",
+                        app_category: "Email",
+                        ios_url: "https://apps.apple.com/us/app/hey-email/id1506603805",
+                        android_url: "https://play.google.com/store/apps/details?id=com.basecamp.hey",
+                        image: "hey.webp"
+                        %>
+
+      <%= render "app", name: "RailsDevs",
+                        app_category: "Developer Tools",
+                        ios_url: "https://apps.apple.com/us/app/railsdevs/id1621607837",
+                        android_url: "",
+                        image: "railsdevs.webp"
+                        %>
+
+      <%= render "app", name: "Context Travel",
+                        app_category: "Travel",
+                        ios_url: "https://apps.apple.com/ca/app/context-travel/id1630419856",
+                        android_url: "",
+                        image: "context_travel.webp"
+                        %>
+
+      <%= render "app", name: "BeerMenus",
+                        app_category: "Food & Drink",
+                        ios_url: "https://apps.apple.com/app/apple-store/id917882057",
+                        android_url: "",
+                        image: "beermenus.webp"
+                        %>
+
+      <%= render "app", name: "PieHoled",
+                        app_category: "Health & Fitness",
+                        ios_url: "https://apps.apple.com/us/app/pieholed/id6467455236",
+                        android_url: "",
+                        image: "pieholed.webp"
+                        %>
+
+      <!-- More people... -->
+    </ul>
+  </div>
+</div>
