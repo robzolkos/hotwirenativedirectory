@@ -12,8 +12,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
   iproute2 \
   libpq-dev \
   openssh-client \
-  vim \
-  zsh
+  vim
 
 RUN apt install --assume-yes curl
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
