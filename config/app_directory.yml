@@ -36,6 +36,7 @@ apps:
     app_category: "Health & Fitness"
     ios_url: "https://apps.apple.com/us/app/pieholed/id6467455236"
     android_url: ""
+    web_url: "https://pieholedapp.com"
     image: "pieholed.webp"
 
   - name: "Hauling Buddies"
