@@ -3,18 +3,21 @@ apps:
     app_category: "Project Management"
     ios_url: "https://apps.apple.com/us/app/basecamp-project-management/id1015603248"
     android_url: "https://play.google.com/store/apps/details?id=com.basecamp.bc3&hl=en_US&gl=US&pli=1"
+    web_url: "https://basecamp.com"
     image: "basecamp.webp"
 
   - name: "Hey"
     app_category: "Email"
     ios_url: "https://apps.apple.com/us/app/hey-email/id1506603805"
     android_url: "https://play.google.com/store/apps/details?id=com.basecamp.hey"
+    web_url: "https://www.hey.com"
     image: "hey.webp"
 
   - name: "RailsDevs"
     app_category: "Developer Tools"
     ios_url: "https://apps.apple.com/us/app/railsdevs/id1621607837"
     android_url: ""
+    web_url: "https://railsdevs.com"
     image: "railsdevs.webp"
 
   - name: "Context Travel"
@@ -69,6 +72,7 @@ apps:
     app_category: "Health & Fitness"
     ios_url: "https://apps.apple.com/us/app/amba-health-and-wellbeing/id1565130657"
     android_url: ""
+    web_url: "https://www.amba.co"
     image: "amba.webp"
 
   - name: "PlanGo - for Instructors"
@@ -111,6 +115,7 @@ apps:
     app_category: "Food & Drink"
     ios_url: "https://apps.apple.com/mx/app/enjoy-kitchen/id6443742018"
     android_url: "https://play.google.com/store/apps/details?id=mx.enjoykitchen.shop"
+    web_url: "https://enjoykitchen.mx"
     image: "enjoy_kitchen.webp"
 
   - name: "myRent"
@@ -118,3 +123,9 @@ apps:
     ios_url: "https://apps.apple.com/us/app/myrent/id6447619622"
     android_url: "https://play.google.com/store/apps/details?id=nz.co.myrent.myRent"
     image: "myrent.webp"
+
+  - name: "Plant Journal - Ploi"
+    app_category: "Lifestyle"
+    ios_url: "https://apps.apple.com/app/apple-store/id1624280409?pt=124998291&ct=tnd&mt=8"
+    android_url: "https://play.google.com/store/apps/details?id=com.devjah.plants"
+    image: "ploi.webp"
