@@ -129,3 +129,9 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=org.mobile.plt4m&pli=1"
     web_url: "https://plt4m.com/"
     image: "plt4m.webp"
+
+  - name: "Sensor Dashboard"
+    app_category: "Tools"
+    android_url: "https://play.google.com/store/apps/details?id=sensor.dashboard.com"
+    web_url: "https://sensor-dashboard.dev-box.ch/"
+    image: "sensor_dashboard.webp"
