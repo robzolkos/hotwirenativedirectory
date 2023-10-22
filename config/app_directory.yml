@@ -122,6 +122,7 @@ apps:
     ios_url: "https://apps.apple.com/app/apple-store/id1624280409?pt=124998291&ct=tnd&mt=8"
     android_url: "https://play.google.com/store/apps/details?id=com.devjah.plants"
     image: "ploi.webp"
+    web_url: "https://ploi.me/"
 
   - name: "PLT4M"
     app_category: "Health & Fitness"
