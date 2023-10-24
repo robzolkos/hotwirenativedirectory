@@ -26,7 +26,7 @@
     <% end %>
     <% if source_url.present? %>
       <li>
-        <%= link_to web_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
+        <%= link_to source_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
           <%= inline_svg_tag "github.svg", class: "w-5 h-5" %>
         <% end %>
       </li>

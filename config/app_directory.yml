@@ -136,3 +136,11 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=sensor.dashboard.com"
     web_url: "https://sensor-dashboard.dev-box.ch/"
     image: "sensor_dashboard.webp"
+
+  - name: "Wavclouds"
+    app_category: "Music"
+    web_url: "https://www.wavclouds.com/"
+    android_url: "https://play.google.com/store/apps/details?id=com.wavclouds.mist"
+    ios_url: "https://apps.apple.com/us/app/wavclouds/id6465136889"
+    source_url: "https://github.com/orgs/Wavclouds/repositories"
+    image: "wavclouds.webp"
