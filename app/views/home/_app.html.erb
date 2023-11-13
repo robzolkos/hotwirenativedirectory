@@ -5,28 +5,28 @@
   <ul role="list" class="mt-2 flex gap-x-3">
     <% if ios_url.present? %>
       <li>
-        <%= link_to ios_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
+        <%= link_to ios_url, target: "_blank", class: "text-gray-400 hover:text-gray-500", "aria-label": "Link to Apple App Store" do %>
           <%= inline_svg_tag "apple.svg", class: "w-5 h-5" %>
         <% end %>
       </li>
     <% end %>
     <% if android_url.present? %>
       <li>
-        <%= link_to android_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
+        <%= link_to android_url, target: "_blank", class: "text-gray-400 hover:text-gray-500", "aria-label": "Link to Google Play Store" do %>
           <%= inline_svg_tag "googleplay.svg", class: "w-5 h-5" %>
         <% end %>
       </li>
     <% end %>
     <% if web_url.present? %>
       <li>
-        <%= link_to web_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
+        <%= link_to web_url, target: "_blank", class: "text-gray-400 hover:text-gray-500", "aria-label": "Link to App website" do %>
           <%= inline_svg_tag "link.svg", class: "w-5 h-5" %>
         <% end %>
       </li>
     <% end %>
     <% if source_url.present? %>
       <li>
-        <%= link_to source_url, target: "_blank", class: "text-gray-400 hover:text-gray-500" do %>
+        <%= link_to source_url, target: "_blank", class: "text-gray-400 hover:text-gray-500", "aria-label": "Link to app code repository" do %>
           <%= inline_svg_tag "github.svg", class: "w-5 h-5" %>
         <% end %>
       </li>
