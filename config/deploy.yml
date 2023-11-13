@@ -7,7 +7,7 @@ servers:
 
 registry:
   username:
-    - KAMAL_REGISTRY_PASSWORD
+    - KAMAL_REGISTRY_USERNAME
   password:
     - KAMAL_REGISTRY_PASSWORD
 env:
