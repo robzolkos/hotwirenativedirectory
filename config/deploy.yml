@@ -3,12 +3,9 @@ service: turbo-native-directory
 image: robzolkos/turbonativedirectory
 
 servers:
-  - 157.245.93.20
+  - 65.21.244.49
 
 registry:
-  server: registry.digitalocean.com
-  username:
-    - KAMAL_REGISTRY_PASSWORD
   password:
     - KAMAL_REGISTRY_PASSWORD
 env:
@@ -17,3 +14,6 @@ env:
 
 volumes:
   - storage:/rails/storage
+
+builder:
+  multiarch: false
