@@ -6,6 +6,8 @@ servers:
   - 65.21.244.49
 
 registry:
+  username:
+    - KAMAL_REGISTRY_PASSWORD
   password:
     - KAMAL_REGISTRY_PASSWORD
 env:
