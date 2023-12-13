@@ -151,3 +151,10 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=co.cital.android.store"
     ios_url: "https://apps.apple.com/us/app/cital-store/id6447628065"
     image: "cital.webp"
+
+  - name: "Daily Log"
+    app_category: "Health & Fitness"
+    web_url: "https://dailylog.ing"
+    ios_url: "https://apps.apple.com/us/app/daily-log-app/id6473819686"
+    source_url: "https://github.com/joemasilotti/daily-log"
+    image: "daily_log.webp"
