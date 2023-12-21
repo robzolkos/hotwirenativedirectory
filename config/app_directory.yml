@@ -158,3 +158,9 @@ apps:
     ios_url: "https://apps.apple.com/us/app/daily-log-app/id6473819686"
     source_url: "https://github.com/joemasilotti/daily-log"
     image: "daily_log.webp"
+    
+  - name: "StepStreak"
+    app_category: "Health & Fitness"
+    web_url: "https://stepstreak.xyz"
+    ios_url: "https://apps.apple.com/en/app/stepstreak/id6474273893"
+    image: "stepstreak.webp"
