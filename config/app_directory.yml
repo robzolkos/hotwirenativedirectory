@@ -164,3 +164,9 @@ apps:
     web_url: "https://stepstreak.xyz"
     ios_url: "https://apps.apple.com/en/app/stepstreak/id6474273893"
     image: "stepstreak.webp"
+
+  - name: "1500cals"
+    app_category: "Health & Fitness"
+    web_url: "https://1500cals.com"
+    ios_url: "https://apps.apple.com/app/1500cals/id6470238113"
+    image: "1500cals.webp"
