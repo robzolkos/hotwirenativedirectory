@@ -115,6 +115,7 @@ apps:
     app_category: "Real Estate"
     ios_url: "https://apps.apple.com/us/app/myrent/id6447619622"
     android_url: "https://play.google.com/store/apps/details?id=nz.co.myrent.myRent"
+    web_url: "https://myrent.co.nz"
     image: "myrent.webp"
 
   - name: "Plant Journal - Ploi"
