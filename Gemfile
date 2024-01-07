@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.2.2"
+ruby "3.3.0"
 
 # Use main development branch of Rails
 gem "rails", github: "rails/rails", branch: "main"
@@ -65,10 +65,8 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 
-  gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
-
   # For deploying the application
-  gem "kamal"
+  gem "kamal", require: false
 end
 
 group :test do
