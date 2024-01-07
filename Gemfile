@@ -52,7 +52,7 @@ group :development, :test do
   gem "debug", platforms: %i[mri windows]
 
   # Used for linting and formatting
-  gem "standard"
+  gem "rubocop-rails-omakase", require: false
 end
 
 group :development do
