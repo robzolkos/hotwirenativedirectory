@@ -19,9 +19,6 @@ services:
     environment:
       RUBYOPT: "--yjit"
 
-    depends_on:
-      - redis
-
   mailgun:
     image: marlonb/mailcrab:latest
     logging:
