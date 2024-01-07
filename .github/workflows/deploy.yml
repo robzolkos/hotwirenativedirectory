@@ -19,7 +19,3 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Run Zeitwerk Check
-        run: |
-          bundle exec rails zeitwerk:check

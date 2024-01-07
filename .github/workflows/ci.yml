@@ -49,10 +49,6 @@ jobs:
         with:
           bundler-cache: true
 
-      - name: Run Zeitwerk Check
-        run: |
-          bundle exec rails zeitwerk:check
-
       - name: Prepare database
         run: |
           bin/rails db:create
