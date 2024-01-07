@@ -2,12 +2,12 @@ name: CI
 
 on:
   pull_request:
+  push:
     branches:
       - main
 
 env:
   RAILS_ENV: test
-  REDIS_URL: redis://redis:6379/1
   RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
 
 jobs:
@@ -16,8 +16,11 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up ruby
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
@@ -28,36 +31,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
-    services:
-      redis:
-        image: redis
-        ports:
-          - "6379:6379"
-
-      chrome:
-        image: seleniarm/standalone-chromium
-        ports:
-          - "7900:7900"
-          - "4444:4444"
-        options: --shm-size=2G
-        env:
-          SE_START_XVFB: false
-
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up ruby
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
-      - name: Run Zeitwerk Check
-        run: |
-          bundle exec rails zeitwerk:check
-
-      - name: Prepare database
-        run: |
-          bin/rails db:create
-          bin/rails db:schema:load
-
-      - name: Run non-system tests
-        run: |
-          bin/rails test
+      - name: Run tests
+        run: bin/rails db:setup test test:system

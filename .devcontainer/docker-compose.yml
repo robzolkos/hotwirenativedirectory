@@ -17,17 +17,10 @@ services:
     command: sleep infinity
 
     environment:
-      REDIS_URL: redis://redis:6379/1
-      TZ: America/New_York
       RUBYOPT: "--yjit"
 
     depends_on:
       - redis
-
-  redis:
-    image: redis:latest
-    ports:
-      - '6379:6379'
 
   mailgun:
     image: marlonb/mailcrab:latest
