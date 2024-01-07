@@ -1,0 +1,22 @@
+service: turbo-native-directory
+
+image: robzolkos/turbonativedirectory
+
+servers:
+  - 65.21.244.49
+
+registry:
+  username:
+    - KAMAL_REGISTRY_USERNAME
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+env:
+  secret:
+    - RAILS_MASTER_KEY
+
+volumes:
+  - storage:/rails/storage
+
+builder:
+  cache:
+    type: gha
