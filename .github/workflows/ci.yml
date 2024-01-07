@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Set up ruby
-      - uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
@@ -33,17 +33,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Set up ruby
-      - uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-
-      - name: Prepare database
-        run: |
-          bin/rails db:create
-          bin/rails db:schema:load
 
       - name: Run tests
         run: bin/rails db:setup test test:system
