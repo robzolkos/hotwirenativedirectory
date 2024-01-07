@@ -53,6 +53,7 @@ group :development, :test do
 
   # Used for linting and formatting
   gem "rubocop-rails-omakase", require: false
+  gem "brakeman", require: false
 end
 
 group :development do
