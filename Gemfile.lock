@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 5407776169e438e56a9f275c3b940231df441f7a
+  revision: ecb1d668bd914a8cf76b1fedacbb0e590c5e194e
   branch: main
   specs:
     actioncable (7.2.0.alpha)
@@ -39,6 +39,7 @@ GIT
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
+      useragent (~> 0.16)
     actiontext (7.2.0.alpha)
       actionpack (= 7.2.0.alpha)
       activerecord (= 7.2.0.alpha)
@@ -102,12 +103,12 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.2.0)
     bcrypt_pbkdf (1.1.0)
-    bigdecimal (3.1.4)
+    bigdecimal (3.1.5)
     bindex (0.8.1)
     bootsnap (1.17.0)
       msgpack (~> 1.2)
@@ -127,9 +128,9 @@ GEM
     connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.4)
-    debug (1.8.0)
-      irb (>= 1.5.0)
-      reline (>= 0.3.1)
+    debug (1.9.1)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
     dotenv (2.8.1)
     drb (2.2.0)
       ruby2_keywords
@@ -139,22 +140,19 @@ GEM
       activesupport (>= 6.1)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    importmap-rails (1.2.3)
+    importmap-rails (2.0.1)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
     inline_svg (1.9.0)
       activesupport (>= 3.0)
       nokogiri (>= 1.6)
-    io-console (0.6.0)
-    irb (1.9.1)
+    io-console (0.7.1)
+    irb (1.11.0)
       rdoc
       reline (>= 0.3.8)
-    jbuilder (2.11.5)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
     json (2.7.1)
-    kamal (1.2.0)
+    kamal (1.3.0)
       activesupport (>= 7.0)
       bcrypt_pbkdf (~> 1.0)
       concurrent-ruby (~> 1.2)
@@ -176,10 +174,10 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.5)
     minitest (5.20.0)
     msgpack (1.7.2)
-    net-imap (0.4.6)
+    mutex_m (0.2.0)
+    net-imap (0.4.9.1)
       date
       net-protocol
     net-pop (0.1.2)
@@ -188,12 +186,15 @@ GEM
       timeout
     net-scp (4.0.0)
       net-ssh (>= 2.6.5, < 8.0.0)
-    net-smtp (0.4.0)
+    net-smtp (0.4.0.1)
       net-protocol
-    net-ssh (7.2.0)
-    nio4r (2.6.1)
-    nokogiri (1.15.5)
-      mini_portile2 (~> 2.8.2)
+    net-ssh (7.2.1)
+    nio4r (2.7.0)
+    nokogiri (1.16.0-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.0-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
     parallel (1.24.0)
     parser (3.3.0.1)
@@ -204,10 +205,10 @@ GEM
       activesupport (>= 7.0.0)
       rack
       railties (>= 7.0.0)
-    psych (5.1.1.1)
+    psych (5.1.2)
       stringio
     public_suffix (5.0.4)
-    puma (6.4.0)
+    puma (6.4.1)
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (3.0.8)
@@ -227,10 +228,10 @@ GEM
       nokogiri (~> 1.14)
     rainbow (3.1.1)
     rake (13.1.0)
-    rdoc (6.6.0)
+    rdoc (6.6.2)
       psych (>= 4.0.0)
-    regexp_parser (2.8.2)
-    reline (0.4.0)
+    regexp_parser (2.8.3)
+    reline (0.4.2)
       io-console (~> 0.5)
     rexml (3.2.6)
     rubocop (1.59.0)
@@ -265,24 +266,25 @@ GEM
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.15.0)
+    selenium-webdriver (4.16.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     sqlite3 (1.7.0-aarch64-linux)
     sqlite3 (1.7.0-arm64-darwin)
     sqlite3 (1.7.0-x86_64-linux)
-    sshkit (1.21.6)
+    sshkit (1.21.7)
+      mutex_m
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    stimulus-rails (1.3.0)
+    stimulus-rails (1.3.3)
       railties (>= 6.0.0)
-    stringio (3.0.9)
-    tailwindcss-rails (2.0.32-aarch64-linux)
+    stringio (3.1.0)
+    tailwindcss-rails (2.2.0-aarch64-linux)
       railties (>= 6.0.0)
-    tailwindcss-rails (2.0.32-arm64-darwin)
+    tailwindcss-rails (2.2.0-arm64-darwin)
       railties (>= 6.0.0)
-    tailwindcss-rails (2.0.32-x86_64-linux)
+    tailwindcss-rails (2.2.0-x86_64-linux)
       railties (>= 6.0.0)
     thor (1.3.0)
     timeout (0.4.1)
@@ -293,6 +295,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
+    useragent (0.16.10)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -319,10 +322,9 @@ DEPENDENCIES
   debug
   importmap-rails
   inline_svg
-  jbuilder
   kamal
   propshaft
-  puma (>= 5.0)
+  puma (~> 6.4)
   rails!
   rubocop-rails-omakase
   selenium-webdriver
@@ -330,7 +332,6 @@ DEPENDENCIES
   stimulus-rails
   tailwindcss-rails
   turbo-rails
-  tzinfo-data
   web-console
 
 RUBY VERSION
