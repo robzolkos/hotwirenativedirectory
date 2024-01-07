@@ -32,9 +32,6 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - name: Install packages
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y google-chrome-stable
-
       - name: Checkout code
         - uses: actions/checkout@v4
 
