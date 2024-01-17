@@ -1,13 +1,13 @@
-<ul role="list" class="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+<ul role="list" class="mx-auto max-w-7xl mt-6 grid gap-4 gap-y-12 sm:gap-x-10 sm:gap-y-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
   <% APP_DETAILS.each do |app| %>
     <%= render "app",
-                name: app['name'],
-                app_category: app['app_category'],
-                ios_url: app['ios_url'],
-                android_url: app['android_url'],
-                image: app['image'],
-                web_url: app['web_url'],
-                source_url: app['source_url']
+               name: app['name'],
+               app_category: app['app_category'],
+               ios_url: app['ios_url'],
+               android_url: app['android_url'],
+               image: app['image'],
+               web_url: app['web_url'],
+               source_url: app['source_url']
     %>
   <% end %>
 </ul>

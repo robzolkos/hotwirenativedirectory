@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Turbo Native Directory</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
-    <meta charset="utf-8">
-    <meta name="description" content="Discover a directory of Turbo Native applications. Explore curated listings of web apps built with Turbo and find the latest innovations in mobile development.">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>Turbo Native Directory</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
+  <meta charset="utf-8">
+  <meta name="description" content="Discover a directory of Turbo Native applications. Explore curated listings of web apps built with Turbo and find the latest innovations in mobile development.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "trix", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
+  <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "trix", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-  <body class="bg-slate-100">
-    <div class="py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Turbo Native Directory</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Native iOS/Android applications backed by web views.</p>
-        </div>
+<body class="bg-stone-200">
 
-        <div class="mt-8 border rounded-lg shadow p-4 text-center bg-yellow-100 border-yellow-200 shadow-yellow-700 text-yellow-900">
-          Don't see your app? <%= link_to "Add", "https://github.com/robzolkos/turbonativedirectory/issues/new", target: "_blank", class: "underline font-bold" %> it to the list.
-        </div>
-
-        <%= yield %>
-
-        <footer class="text-center mt-12">
-          ❤️ Made with love by <a href="https://twitter.com/robzolkos" target="_blank" class="text-blue-600 hover:text-blue-700">Rob Zolkos</a> and <a href="https://github.com/robzolkos/turbonativedirectory/graphs/contributors" target="_blank" class="text-blue-600 hover:text-blue-700">contributors</a> on <a href="https://github.com/robzolkos/turbonativedirectory/graphs/contributors" target="_blank" class="text-blue-600 hover:text-blue-700">Github</a>
-        </footer>
-      </div>
+<div class="flex flex-col">
+  <nav class="max-w-7xl z-50 mx-auto w-full flex flex-col sm:flex-row gap-4 justify-between items-center px-5 pt-8">
+    <div class="flex gap-2 flex-col sm:flex-row justify-center sm:justify-start items-center flex-1 shrink-0 w-full">
+      <%= image_tag('logo.png', srcset: { "logo@2x.png" => "2x" }, class: "w-20 sm:w-28") %>
+      <p class="text-base sm:text-2xl sm:leading-none font-black text-center sm:text-left sm:w-1/2 sm:max-w-sm sm:w-full leading-none">Native
+        iOS/Android applications backed by web
+        views</p>
     </div>
-  </body>
+
+    <%= link_to "https://github.com/robzolkos/turbonativedirectory/issues/new", target: "_blank", class: "px-9 py-3 text-base hover:bg-amber-600 group transition-all duration-300 font-semibold bg-black text-white rounded-full gap-2 items-center inline-flex" do %>
+      <span class="relative">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 -left-4 top-1/2 -translate-y-1/2 group-hover:scale-0 scale-100 absolute transition-all duration-100">
+        <path d="M2 4.25A2.25 2.25 0 0 1 4.25 2h2.5A2.25 2.25 0 0 1 9 4.25v2.5A2.25 2.25 0 0 1 6.75 9h-2.5A2.25 2.25 0 0 1 2 6.75v-2.5ZM2 13.25A2.25 2.25 0 0 1 4.25 11h2.5A2.25 2.25 0 0 1 9 13.25v2.5A2.25 2.25 0 0 1 6.75 18h-2.5A2.25 2.25 0 0 1 2 15.75v-2.5ZM11 4.25A2.25 2.25 0 0 1 13.25 2h2.5A2.25 2.25 0 0 1 18 4.25v2.5A2.25 2.25 0 0 1 15.75 9h-2.5A2.25 2.25 0 0 1 11 6.75v-2.5ZM15.25 11.75a.75.75 0 0 0-1.5 0v2h-2a.75.75 0 0 0 0 1.5h2v2a.75.75 0 0 0 1.5 0v-2h2a.75.75 0 0 0 0-1.5h-2v-2Z"/>
+      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 -left-4 top-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 absolute transition-all duration-200">
+          <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z"/>
+        </svg>
+      </span>
+      <span>Add my app</span>
+    <% end %>
+  </nav>
+
+  <main class="px-6 mt-10 grow">
+
+    <%= yield %>
+
+    <footer class="text-center my-12">
+      ❤️ Made with love by
+      <a href="https://twitter.com/robzolkos" target="_blank" class="text-amber-600 hover:text-amber-700">Rob Zolkos</a>
+      and
+      <a href="https://github.com/robzolkos/turbonativedirectory/graphs/contributors" target="_blank" class="text-amber-600 hover:text-amber-700">contributors</a>
+      on
+      <a href="https://github.com/robzolkos/turbonativedirectory/graphs/contributors" target="_blank" class="text-amber-600 hover:text-amber-700">Github</a>
+    </footer>
+  </main>
+</div>
+
+</body>
 </html>
