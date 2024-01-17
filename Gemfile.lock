@@ -1,4 +1,14 @@
 GIT
+  remote: https://github.com/rails/propshaft.git
+  revision: e7cdbcd4aa9c9a390dade263bbd7c7cedc0c6442
+  specs:
+    propshaft (0.8.0)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
+      railties (>= 7.0.0)
+
+GIT
   remote: https://github.com/rails/rails.git
   revision: 8f386d73215867d5f55058a252f066b1040a7f2b
   branch: main
@@ -197,11 +207,6 @@ GEM
     parser (3.3.0.4)
       ast (~> 2.4.1)
       racc
-    propshaft (0.8.0)
-      actionpack (>= 7.0.0)
-      activesupport (>= 7.0.0)
-      rack
-      railties (>= 7.0.0)
     psych (5.1.2)
       stringio
     public_suffix (5.0.4)
@@ -321,7 +326,7 @@ DEPENDENCIES
   importmap-rails
   inline_svg
   kamal
-  propshaft
+  propshaft!
   puma (~> 6.4)
   rails!
   rubocop-rails-omakase

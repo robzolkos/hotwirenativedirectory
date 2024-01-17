@@ -13,7 +13,7 @@ gem "puma", "~> 6.4"
 gem "bootsnap", require: false
 
 # Assets
-gem "propshaft"
+gem "propshaft", github: "rails/propshaft"
 gem "importmap-rails"
 
 # Hotwire
