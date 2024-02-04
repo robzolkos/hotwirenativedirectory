@@ -6,12 +6,19 @@ apps:
     web_url: "https://basecamp.com"
     image: "basecamp.webp"
 
-  - name: "Hey"
+  - name: "HEY Email"
     app_category: "Email"
     ios_url: "https://apps.apple.com/us/app/hey-email/id1506603805"
     android_url: "https://play.google.com/store/apps/details?id=com.basecamp.hey"
     web_url: "https://www.hey.com"
-    image: "hey.webp"
+    image: "hey_email.webp"
+
+  - name: "HEY Calendar"
+    app_category: "Calendar"
+    ios_url: "https://apps.apple.com/us/app/hey-calendar/id6449716061"
+    android_url: "https://play.google.com/store/apps/details?id=com.basecamp.heycalendar"
+    web_url: "https://www.hey.com/calendar"
+    image: "hey_calendar.webp"
 
   - name: "RailsDevs"
     app_category: "Developer Tools"
