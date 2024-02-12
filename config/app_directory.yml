@@ -166,7 +166,7 @@ apps:
     ios_url: "https://apps.apple.com/us/app/daily-log-app/id6473819686"
     source_url: "https://github.com/joemasilotti/daily-log"
     image: "daily_log.webp"
-    
+
   - name: "StepStreak"
     app_category: "Health & Fitness"
     web_url: "https://stepstreak.xyz"
@@ -185,3 +185,10 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=ch.oxon.myfnch"
     ios_url: "https://apps.apple.com/us/app/swiss-equestrian/id1032326251"
     image: "swiss_equestrian.webp"
+
+  - name: "Malo - Bébé, Enfant, Parent"
+    app_category: "Medical"
+    web_url: "https://bonjourmalo.fr"
+    android_url: "https://play.google.com/store/apps/details?id=com.kelindi.malo"
+    ios_url: "https://apps.apple.com/fr/app/malo-b%C3%A9b%C3%A9-enfant-parent/id1535908879"
+    image: "malo.webp"
