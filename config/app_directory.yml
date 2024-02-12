@@ -178,3 +178,10 @@ apps:
     web_url: "https://1500cals.com"
     ios_url: "https://apps.apple.com/app/1500cals/id6470238113"
     image: "1500cals.webp"
+
+  - name: "Swiss Equestrian"
+    app_category: "Sports"
+    web_url: "https://www.swiss-equestrian.ch/de/Sport/An-Turnieren-teilnehmen/Mobile-App/Mobile-App.html"
+    android_url: "https://play.google.com/store/apps/details?id=ch.oxon.myfnch"
+    ios_url: "https://apps.apple.com/us/app/swiss-equestrian/id1032326251"
+    image: "swiss_equestrian.webp"
