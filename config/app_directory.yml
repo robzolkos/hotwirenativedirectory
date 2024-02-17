@@ -192,3 +192,9 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=com.kelindi.malo"
     ios_url: "https://apps.apple.com/fr/app/malo-b%C3%A9b%C3%A9-enfant-parent/id1535908879"
     image: "malo.webp"
+
+  - name: "Virtualtrails"
+    app_category: "Health & Fitness"
+    web_url: "https://virtualtrails.app"
+    ios_url: "https://apps.apple.com/us/app/virtualtrails/id6448714026"
+    image: "virtualtrails.webp"
