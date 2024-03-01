@@ -198,3 +198,9 @@ apps:
     web_url: "https://virtualtrails.app"
     ios_url: "https://apps.apple.com/us/app/virtualtrails/id6448714026"
     image: "virtualtrails.webp"
+
+  - name: "Buzzsprout"
+    app_category: "Podcasting"
+    web_url: "https://buzzsprout.com"
+    ios_url: "https://apps.apple.com/app/buzzsprout/id6459145367"
+    image: "buzzsprout.webp"
