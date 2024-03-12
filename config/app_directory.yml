@@ -204,3 +204,9 @@ apps:
     web_url: "https://buzzsprout.com"
     ios_url: "https://apps.apple.com/app/buzzsprout/id6459145367"
     image: "buzzsprout.webp"
+
+  - name: "SporticalApp"
+    app_category: "Sports & Entertainment"
+    web_url: "https://www.sportical.app"
+    ios_url: "https://apps.apple.com/app/sporticalapp/id6479256969"
+    image: "sporticalapp.webp"
