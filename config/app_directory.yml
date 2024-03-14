@@ -210,3 +210,9 @@ apps:
     web_url: "https://www.sportical.app"
     ios_url: "https://apps.apple.com/app/sporticalapp/id6479256969"
     image: "sporticalapp.webp"
+
+  - name: "OneTribe"
+    app_category: "Business"
+    web_url: "https://onetribe.team"
+    ios_url: "https://apps.apple.com/us/app/onetribe/id6470613776"
+    image: "onetribe.webp"
