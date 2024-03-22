@@ -216,3 +216,10 @@ apps:
     web_url: "https://onetribe.team"
     ios_url: "https://apps.apple.com/us/app/onetribe/id6470613776"
     image: "onetribe.webp"
+
+  - name: "Poll Everywhere"
+    app_category: "Business"
+    web_url: "https://polleverywhere.com"
+    android_url: "https://play.google.com/store/apps/details?id=com.polleverywhere.mobile"
+    ios_url: "https://apps.apple.com/us/app/poll-everywhere/id893375312"
+    image: "polleverywhere.webp"
