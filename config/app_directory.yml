@@ -224,7 +224,7 @@ apps:
     ios_url: "https://apps.apple.com/us/app/poll-everywhere/id893375312"
     image: "polleverywhere.webp"
 
-  - name: "Poll Everywhere"
+  - name: "Move"
     app_category: "Networking & Events"
     web_url: "https://m0ve.app"
     ios_url: "https://apps.apple.com/us/app/move-events/id1663690349"
