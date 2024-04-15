@@ -229,3 +229,9 @@ apps:
     web_url: "https://m0ve.app"
     ios_url: "https://apps.apple.com/us/app/move-events/id1663690349"
     image: "move.webp"
+
+  - name: "Uppercase"
+    app_category: "Education"
+    web_url: "https://www.uppercaseteach.com"
+    ios_url: "https://apps.apple.com/us/app/uppercase-advice-for-teachers/id6471621007"
+    image: "uppercase.webp"
