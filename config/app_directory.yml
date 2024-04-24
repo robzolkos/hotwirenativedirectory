@@ -235,3 +235,9 @@ apps:
     web_url: "https://www.uppercaseteach.com"
     ios_url: "https://apps.apple.com/us/app/uppercase-advice-for-teachers/id6471621007"
     image: "uppercase.webp"
+
+  - name: "SleepHQ"
+    app_category: "Health & Fitness"
+    web_url: "https://sleephq.com"
+    ios_url: "https://apps.apple.com/au/app/sleephq/id6451459781"
+    image: "sleephq.webp"
