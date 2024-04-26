@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
-ruby "3.3.0"
+ruby "3.3.1"
 
 # Rails
 gem "rails", github: "rails/rails", branch: "main"
 
 # Drivers
-gem "sqlite3", "~> 1.4"
+gem "sqlite3"
 
 # Deployment
 gem "puma", "~> 6.4"
