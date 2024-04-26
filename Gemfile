@@ -6,7 +6,7 @@ ruby "3.3.1"
 gem "rails", github: "rails/rails", branch: "main"
 
 # Drivers
-gem "sqlite3", "~> 1.4"
+gem "sqlite3"
 
 # Deployment
 gem "puma", "~> 6.4"
