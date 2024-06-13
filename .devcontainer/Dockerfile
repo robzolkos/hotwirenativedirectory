@@ -1,4 +1,4 @@
-FROM ruby:3.3.1-slim-bullseye
+FROM ruby:3.3.3-slim-bullseye
 
 ENV TZ="America/New_York"
 
