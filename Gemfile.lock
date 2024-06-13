@@ -325,7 +325,6 @@ DEPENDENCIES
   importmap-rails
   inline_svg
   kamal
-  net-protocol
   propshaft
   puma (~> 6.4)
   rails!

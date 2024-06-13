@@ -23,7 +23,6 @@ gem "stimulus-rails"
 # Other
 gem "inline_svg"
 gem "tailwindcss-rails"
-gem "net-protocol"
 
 group :development, :test do
   gem "debug"
