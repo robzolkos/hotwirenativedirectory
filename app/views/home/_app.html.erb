@@ -24,7 +24,7 @@
     <% end %>
     <% if android_url.present? %>
       <li class="flex justify-center">
-        <%= render "download_button", path: android_url, icon: "googleplay", aria: "Link to Google Play Store" %>
+        <%= android_download_button(android_url) %>
       </li>
     <% end %>
 

@@ -248,3 +248,10 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=com.ieasybooks.baheth"
     ios_url: "https://apps.apple.com/us/app/باحث/id6451044688"
     image: "baheth.webp"
+
+  - name: "BlackCandy"
+    app_category: "Music"
+    ios_url: "https://apps.apple.com/app/blackcandy/id6444304071"
+    android_url: "https://f-droid.org/packages/org.blackcandy.android/"
+    source_url: "https://github.com/blackcandy-org/blackcandy"
+    image: "blackcandy.webp"
