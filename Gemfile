@@ -10,7 +10,9 @@ gem "sqlite3"
 
 # Deployment
 gem "puma", "~> 6.4"
+gem "thruster", require: false
 gem "bootsnap", require: false
+gem "kamal", require: false
 
 # Assets
 gem "propshaft"
@@ -25,14 +27,13 @@ gem "inline_svg"
 gem "tailwindcss-rails"
 
 group :development, :test do
-  gem "debug"
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "rubocop-rails-omakase", require: false
   gem "brakeman", require: false
 end
 
 group :development do
   gem "web-console"
-  gem "kamal", require: false
 end
 
 group :test do
