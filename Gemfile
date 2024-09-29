@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.3.5"
 
 # Rails
-gem "rails", github: "rails/rails", branch: "main"
+gem "rails", "~> 8.0.0.beta1"
 
 # Drivers
 gem "sqlite3"
