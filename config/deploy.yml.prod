@@ -19,9 +19,6 @@ env:
 volumes:
   - storage:/rails/storage
 
-proxy:
-  app_port: 3000
-
 builder:
   cache:
     type: gha
