@@ -6,12 +6,6 @@ servers:
   web:
     hosts:
       - 5.161.197.35
-    labels:
-      traefik.http.routers.example.rule: Host(`turbonative.directory`)
-      traefik.http.routers.example_secure.entrypoints: websecure
-      traefik.http.routers.example_secure.rule: Host(`turbonative.directory`)
-      traefik.http.routers.example_secure.tls: true
-      traefik.http.routers.example_secure.tls.certresolver: letsencrypt
 
 registry:
   username:
@@ -25,21 +19,11 @@ env:
 volumes:
   - storage:/rails/storage
 
-traefik:
-  options:
-    publish:
-      - 443:443
-    volume:
-      - /root/acme.json:/letsencrypt/acme.json
-  args:
-    entryPoints.web.address: ":80"
-    entryPoints.websecure.address: ":443"
-    certificatesResolvers.letsencrypt.acme.email: "robzolkos@hey.com"
-    certificatesResolvers.letsencrypt.acme.storage: "/letsencrypt/acme.json"
-    certificatesResolvers.letsencrypt.acme.httpchallenge: true
-    certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
+proxy:
+  app_port: 3000
 
 builder:
   cache:
     type: gha
-  multiarch: false
+  arch:
+    - amd64

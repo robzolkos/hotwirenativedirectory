@@ -12,7 +12,7 @@ gem "sqlite3"
 gem "puma", "~> 6.4"
 gem "thruster", require: false
 gem "bootsnap", require: false
-gem "kamal", "1.9.0", require: false
+gem "kamal", require: false
 
 # Assets
 gem "propshaft"
