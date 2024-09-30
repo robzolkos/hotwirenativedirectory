@@ -1,6 +1,6 @@
-# Turbo Native Directory
+# Hotwire Native Directory
 
-A place to discover Turbo Native applications and share learnings on building them.
+A place to discover Hotwire Native applications and share learnings on building them.
 
 ## How To Add Your App
 
