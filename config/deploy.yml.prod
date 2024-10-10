@@ -7,6 +7,12 @@ servers:
     hosts:
       - 5.161.197.35
 
+proxy:
+  ssl: true
+  hosts:
+    - turbonative.directory
+    - hotwirenative.directory
+
 registry:
   username:
     - KAMAL_REGISTRY_USERNAME
