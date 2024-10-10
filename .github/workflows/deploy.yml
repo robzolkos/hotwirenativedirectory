@@ -22,8 +22,6 @@ jobs:
         with:
           bundler-cache: true
 
-      - run: gem install kamal
-
       - uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -34,4 +32,4 @@ jobs:
         run: cp config/deploy.yml.prod config/deploy.yml
 
       - name: Deploy Application
-        run: kamal deploy
+        run: bundle exec kamal deploy
