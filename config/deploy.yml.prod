@@ -10,7 +10,6 @@ servers:
 proxy:
   ssl: true
   hosts:
-    - turbonative.directory
     - hotwirenative.directory
 
 registry:
