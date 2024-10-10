@@ -7,8 +7,6 @@ servers:
     hosts:
       - turbonative.directory
       - hotwirenative.directory
-      - www.turbonative.directory
-      - www.hotwirenative.directory
 
 registry:
   username:
