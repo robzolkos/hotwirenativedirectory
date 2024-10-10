@@ -1,6 +1,6 @@
-service: turbo-native-directory
+service: hotwire-native-directory
 
-image: robzolkos/turbonativedirectory
+image: robzolkos/hotwirenativedirectory
 
 servers:
   web:
