@@ -11,6 +11,7 @@ proxy:
   ssl: true
   hosts:
     - hotwirenative.directory
+    - turbonative.directory
 
 registry:
   username:
