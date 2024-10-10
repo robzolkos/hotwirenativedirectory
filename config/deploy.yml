@@ -7,7 +7,7 @@ servers:
 
 proxy:
   ssl: true
-  host: turbonative.directory,hotwirenative.directory
+  host: hotwirenative.directory
 
 registry:
   username:
