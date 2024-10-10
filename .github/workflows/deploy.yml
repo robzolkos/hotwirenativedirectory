@@ -32,4 +32,4 @@ jobs:
         run: cp config/deploy.yml.prod config/deploy.yml
 
       - name: Deploy Application
-        run: bundle exec kamal deploy
+        run: kamal deploy
