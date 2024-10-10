@@ -24,7 +24,7 @@ gem "stimulus-rails"
 
 # Other
 gem "inline_svg"
-gem "tailwindcss-rails"
+gem "tailwindcss-rails", "3.0.0.rc1"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
