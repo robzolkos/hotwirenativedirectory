@@ -5,8 +5,7 @@ image: robzolkos/turbonativedirectory
 servers:
   web:
     hosts:
-      - turbonative.directory
-      - hotwirenative.directory
+      - 5.161.197.35
 
 registry:
   username:
