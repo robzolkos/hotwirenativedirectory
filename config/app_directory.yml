@@ -262,3 +262,9 @@ apps:
     ios_url: "https://apps.apple.com/app/oxocare/id1444320330"
     android_url: "https://play.google.com/store/apps/details?id=ch.oxon.oxocare_mobile"
     image: "oxocare.webp"
+
+  - name: "Musa"
+    app_category: "Health & Fitness"
+    web_url: "https://musa.app/"
+    ios_url: "https://apps.apple.com/app/musa-cycle-syncing-dragon/id6504586102"
+    image: "musa.webp"
