@@ -268,3 +268,9 @@ apps:
     web_url: "https://musa.app/"
     ios_url: "https://apps.apple.com/app/musa-cycle-syncing-dragon/id6504586102"
     image: "musa.webp"
+
+  - name: "Friends Weekly"
+    app_category: "Social Networking"
+    web_url: "https://friendsweekly.com"
+    ios_url: "https://apps.apple.com/us/app/friends-weekly/id6742522810"
+    image: "friendsweekly.webp"
