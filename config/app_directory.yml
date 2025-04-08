@@ -274,3 +274,9 @@ apps:
     web_url: "https://friendsweekly.com"
     ios_url: "https://apps.apple.com/us/app/friends-weekly/id6742522810"
     image: "friendsweekly.webp"
+
+  - name: "RubyEvents"
+    app_category: "Education"
+    web_url: "https://www.rubyevents.org"
+    ios_url: "https://apps.apple.com/app/rubyevents/id6743987375"
+    image: "rubyevents.webp"
