@@ -286,3 +286,10 @@ apps:
     web_url: "https://www.filmchase.com/"
     ios_url: "https://apps.apple.com/gb/app/film-chase/id6745129572"
     image: "filmchase.webp"
+
+  - name: "Sweeps Jobs"
+    app_category: "Lifestyle"
+    web_url: "https://sweeps.jobs"
+    ios_url: "https://apps.apple.com/us/app/sweeps-jobs/id1617286561"
+    image: "sweeps.webp"
+ 
