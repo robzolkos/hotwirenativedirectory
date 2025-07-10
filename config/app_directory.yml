@@ -293,3 +293,17 @@ apps:
     ios_url: "https://apps.apple.com/us/app/sweeps-jobs/id1617286561"
     image: "sweeps.webp"
  
+  - name: "ShastaBiz"
+    app_category: "Reference"
+    web_url: "https://shastabiz.com"
+    ios_url: "https://apps.apple.com/us/app/shastabiz/id6740650574"
+    android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.shastabiz&pcampaignid=web_share" 
+    image: "shastabiz.webp"
+
+  - name: "BraveCo"
+    app_category: "Lifestyle"
+    web_url: "https://braveco.org"
+    ios_url: "https://apps.apple.com/us/app/braveco/id6744705646"
+    android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.braveco&pcampaignid=web_share" 
+    image: "braveco.webp"
+ 
