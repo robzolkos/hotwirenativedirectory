@@ -307,3 +307,9 @@ apps:
     android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.braveco&pcampaignid=web_share" 
     image: "braveco.webp"
  
+  - name: "On My Way"
+    app_category: "Education"
+    web_url: "https://omw.nl"
+    ios_url: "https://apps.apple.com/nl/app/on-my-way/id6670307079"
+    android_url: "https://play.google.com/store/apps/details?id=nl.plango.omw"
+    image: "onmyway.webp"
