@@ -313,3 +313,9 @@ apps:
     ios_url: "https://apps.apple.com/nl/app/on-my-way/id6670307079"
     android_url: "https://play.google.com/store/apps/details?id=nl.plango.omw"
     image: "onmyway.webp"
+
+  - name: "Ruby Friends"
+    app_category: "Social Networking"
+    web_url: "https://rubyfriends.app"
+    ios_url: "https://apps.apple.com/us/app/ruby-friends/id6748887042"
+    image: "rubyfriends.webp"
