@@ -319,3 +319,10 @@ apps:
     web_url: "https://rubyfriends.app"
     ios_url: "https://apps.apple.com/us/app/ruby-friends/id6748887042"
     image: "rubyfriends.webp"
+
+  - name: "Knoc Neighborhood Security"
+    app_category: "Social Networking"
+    web_url: "https://knoc.us"
+    ios_url: "https://apps.apple.com/us/app/knoc-neighborhood-security/id6745712336"
+    android_url: "https://play.google.com/store/apps/details?id=us.knoc.knoc"
+    image: "knoc.webp"
