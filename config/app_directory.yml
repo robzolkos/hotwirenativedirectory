@@ -334,3 +334,10 @@ apps:
     ios_url: "https://apps.apple.com/us/app/daily-rosary-app/id6748244019"
     android_url: "https://play.google.com/store/apps/details?id=com.dailyrosary.app"
     image: "dailyrosaryapp.webp"
+
+  - name: "Calendar Vision"
+    app_category: "Calendar"
+    web_url: "https://calendarvision.app/"
+    ios_url: "https://apps.apple.com/us/app/calendar-vision/id6746702391"
+    android_url: "https://play.google.com/store/apps/details?id=com.rowhomelabs.calendarvision"
+    image: "calendarvision.webp"
