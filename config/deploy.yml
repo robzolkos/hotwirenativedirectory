@@ -1,6 +1,6 @@
 service: hotwire-native-directory
 
-image: robzolkos/hotwirenativedirectory
+image: ghcr.io/robzolkos/hotwirenativedirectory
 
 servers:
   - 5.161.197.35
@@ -12,6 +12,7 @@ proxy:
     - turbonative.directory
 
 registry:
+  server: ghcr.io
   username:
     - KAMAL_REGISTRY_USERNAME
   password:
