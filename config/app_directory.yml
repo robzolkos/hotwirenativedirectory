@@ -361,3 +361,10 @@ apps:
     ios_url: "https://apps.apple.com/us/app/pray-ai/id6448802131"
     android_url: "https://play.google.com/store/apps/details?id=com.prayai.prayai"
     image: "prayai.webp"
+
+  - name: "Basketball Training"
+    app_category: "Sports"
+    web_url: "https://www.loyal.app/"
+    ios_url: "https://apps.apple.com/us/app/basketball-training-workouts/id738165126"
+    android_url: "https://play.google.com/store/apps/details?id=com.fitivity.basketball_drills&hl=en_US"
+    image: "basketball_training.webp"
