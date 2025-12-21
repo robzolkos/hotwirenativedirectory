@@ -368,3 +368,9 @@ apps:
     ios_url: "https://apps.apple.com/us/app/basketball-training-workouts/id738165126"
     android_url: "https://play.google.com/store/apps/details?id=com.fitivity.basketball_drills&hl=en_US"
     image: "basketball_training.webp"
+
+  - name: "Cometeer"
+    app_category: "Shopping"
+    web_url: "https://cometeer.com"
+    ios_url: "https://apps.apple.com/us/app/cometeer/id6738394746"
+    image: "cometeer.webp"
