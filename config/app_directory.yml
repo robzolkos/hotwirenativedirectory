@@ -369,7 +369,7 @@ apps:
     image: "cometeer.webp"
 
   - name: G-CRED
-    category: Sports
-    ios: https://apps.apple.com/us/app/g-cred/id6744907983
-    web: https://gcred.app
-    image: gcred.webp    
+    app_category: Sports
+    web_url: https://gcred.app
+    ios_url: https://apps.apple.com/us/app/g-cred/id6744907983
+    image: gcred.webp
