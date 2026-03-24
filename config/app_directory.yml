@@ -368,6 +368,13 @@ apps:
     ios_url: "https://apps.apple.com/us/app/cometeer/id6738394746"
     image: "cometeer.webp"
 
+  - name: "Cammi"
+    app_category: "Lifestyle"
+    web_url: "https://cammi.app"
+    ios_url: "https://apps.apple.com/gb/app/cammi-build-a-kinder-voice/id6741324054"
+    android_url: "https://play.google.com/store/apps/details?id=app.cammi.android"
+    image: "cammi.webp"
+
   - name: G-CRED
     app_category: Sports
     web_url: https://gcred.app
