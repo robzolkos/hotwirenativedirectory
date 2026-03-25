@@ -380,3 +380,9 @@ apps:
     web_url: https://gcred.app
     ios_url: https://apps.apple.com/us/app/g-cred/id6744907983
     image: gcred.webp
+
+  - name: "RoRvsWild"
+    app_category: "Developer Tools"
+    web_url: "https://www.rorvswild.com"
+    ios_url: "https://apps.apple.com/app/rorvswild/id6760020691"
+    image: "rorvswild.webp"
