@@ -385,4 +385,5 @@ apps:
     app_category: "Developer Tools"
     web_url: "https://www.rorvswild.com"
     ios_url: "https://apps.apple.com/app/rorvswild/id6760020691"
+    android_url: "https://play.google.com/store/apps/details?id=com.basesecrete.rorvswild"
     image: "rorvswild.webp"
