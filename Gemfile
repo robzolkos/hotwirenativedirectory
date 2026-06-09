@@ -9,7 +9,7 @@ gem "rails", "~> 8.0.0.beta1"
 gem "sqlite3"
 
 # Deployment
-gem "puma", "~> 6.4"
+gem "puma", "~> 7.2"
 gem "thruster", require: false
 gem "bootsnap", require: false
 gem "kamal", require: false
