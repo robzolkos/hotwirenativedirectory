@@ -1,7 +1,7 @@
 require "test_helper"
 
 class AppDirectoryTest < ActiveSupport::TestCase
-  VALID_KEYS = %w[name app_category ios_url android_url web_url source_url image].freeze
+  VALID_KEYS = %w[name app_category description ios_url android_url web_url source_url image].freeze
 
   setup do
     @apps = YAML.load_file(Rails.root.join("config/app_directory.yml"))["apps"]
@@ -28,5 +28,10 @@ class AppDirectoryTest < ActiveSupport::TestCase
       assert app["ios_url"].present? || app["android_url"].present?,
         "#{app['name'] || 'Unknown app'} must have at least an ios_url or android_url"
     end
+  end
+
+  test "description is optional" do
+    assert @apps.any? { |app| app["description"].present? }, "At least one app should demonstrate an optional description"
+    assert @apps.any? { |app| app["description"].blank? }, "Apps without descriptions should remain valid"
   end
 end

@@ -5,4 +5,16 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
     get root_path
     assert_select "li.app", /Basecamp/
   end
+
+  test "renders optional app descriptions without affecting apps that omit them" do
+    get root_path
+
+    assert_select "li.app", text: /Basecamp/ do
+      assert_select "p.app-description", text: /Project management from 37signals/
+    end
+
+    assert_select "li.app", text: /HEY Email/ do
+      assert_select "p.app-description", false
+    end
+  end
 end

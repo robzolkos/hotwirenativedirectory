@@ -14,6 +14,9 @@
       <h3 class="text-2xl font-medium tracking-tight text-stone-700"><%= name %></h3>
     <% end %>
     <p class="text-stone-500 leading-none text-sm"><%= app_category %></p>
+    <% if local_assigns[:description].present? %>
+      <p class="app-description mt-3 text-sm leading-5 text-stone-600"><%= description %></p>
+    <% end %>
   </div>
 
   <ul role="list" class="mt-4 flex [&>*]:flex-1 gap-1.5">
