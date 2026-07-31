@@ -1,4 +1,4 @@
-<li class="bg-white shadow-md hover:-translate-y-2 duration-300 transition-all shadow-stone-600/5 ring-1 ring-black/5 p-3 group rounded-3xl app">
+<li class="bg-white shadow-md hover:-translate-y-2 duration-300 transition-all shadow-stone-600/5 ring-1 ring-black/5 p-3 group rounded-3xl app flex flex-col h-full">
 
   <%= image_tag "apps/#{image}", class: "bg-white aspect-square group-hover:-translate-y-4 duration-300 transition-all -mt-8 mx-auto border border-stone-900/10 shadow-lg shadow-stone-600/10 w-40 rounded-3xl object-cover", alt: "#{name} Logo" %>
 
@@ -14,9 +14,12 @@
       <h3 class="text-2xl font-medium tracking-tight text-stone-700"><%= name %></h3>
     <% end %>
     <p class="text-stone-500 leading-none text-sm"><%= app_category %></p>
+    <% if local_assigns[:description].present? %>
+      <p class="app-description mt-3 text-sm leading-5 text-stone-600"><%= description %></p>
+    <% end %>
   </div>
 
-  <ul role="list" class="mt-4 flex [&>*]:flex-1 gap-1.5">
+  <ul role="list" class="mt-auto pt-4 flex [&>*]:flex-1 gap-1.5">
     <% if ios_url.present? %>
       <li class="flex justify-center">
         <%= render "download_button", path: ios_url, icon: "apple", aria: "Link to Apple App Store" %>
