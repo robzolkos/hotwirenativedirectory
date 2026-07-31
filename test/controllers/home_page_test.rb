@@ -17,4 +17,11 @@ class HomeControllerTest < ActionDispatch::IntegrationTest
       assert_select "p.app-description", false
     end
   end
+
+  test "download buttons stay pinned to the bottom of cards" do
+    get root_path
+
+    assert_select "li.app.flex.flex-col.h-full"
+    assert_select "li.app ul.mt-auto"
+  end
 end
