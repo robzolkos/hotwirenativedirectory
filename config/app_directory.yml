@@ -294,21 +294,21 @@ apps:
     ios_url: "https://apps.apple.com/us/app/sweeps-jobs/id1617286561"
     android_url: "https://play.google.com/store/apps/details?id=com.sweepsjobs.android"
     image: "sweeps.webp"
- 
+
   - name: "ShastaBiz"
     app_category: "Reference"
     web_url: "https://shastabiz.com"
     ios_url: "https://apps.apple.com/us/app/shastabiz/id6740650574"
-    android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.shastabiz&pcampaignid=web_share" 
+    android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.shastabiz&pcampaignid=web_share"
     image: "shastabiz.webp"
 
   - name: "BraveCo"
     app_category: "Lifestyle"
     web_url: "https://braveco.org"
     ios_url: "https://apps.apple.com/us/app/braveco/id6744705646"
-    android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.braveco&pcampaignid=web_share" 
+    android_url: "https://play.google.com/store/apps/details?id=com.eduardosouza.braveco&pcampaignid=web_share"
     image: "braveco.webp"
- 
+
   - name: "On My Way"
     app_category: "Education"
     web_url: "https://omw.nl"
@@ -388,3 +388,10 @@ apps:
     ios_url: "https://apps.apple.com/app/rorvswild/id6760020691"
     android_url: "https://play.google.com/store/apps/details?id=com.basesecrete.rorvswild"
     image: "rorvswild.webp"
+
+  - name: "char.gy"
+    app_category: "Utilities"
+    web_url: "https://char.gy"
+    ios_url: "https://apps.apple.com/app/char-gy/id1636840750"
+    android_url: "https://play.google.com/store/apps/details?id=com.chargy_limited.driverapp"
+    image: "chargy.webp"
