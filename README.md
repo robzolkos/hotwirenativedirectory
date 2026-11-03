@@ -27,16 +27,3 @@ Open http://localhost:4000. The test checks every entry in `_data/app_directory.
 ## Edit the styles
 
 Stylesheets live in `assets/stylesheets/`, one file per component, in the style of [Fizzy](https://github.com/basecamp/fizzy). The layout links every file in that folder in alphabetical order. `_global.css` sorts first. It declares the cascade layers (`reset`, `base`, `components`) and the shared custom properties. To add a component, create a new file and wrap its rules in `@layer components`.
-
-## Compare two builds pixel by pixel
-
-`test/visual/parity.mjs` screenshots two URLs at six viewport widths, at rest and with the pointer over a card, a card title, a download button, and **Add my app**. It exits with an error if any pixel differs, and it lists computed-style differences for review.
-
-```sh
-cd test/visual
-npm install
-npx playwright install chromium
-node parity.mjs https://hotwirenative.directory/ http://localhost:4000/ /tmp/parity
-```
-
-ImageMagick must be installed to produce the diff images.
