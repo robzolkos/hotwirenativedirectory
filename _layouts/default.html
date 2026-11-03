@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ site.title }}</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>">
+  <meta charset="utf-8">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  {% assign stylesheets = site.static_files | where_exp: "file", "file.path contains '/assets/stylesheets/'" | sort: "path" %}
+  {%- for stylesheet in stylesheets %}
+  <link rel="stylesheet" href="{{ stylesheet.path | relative_url }}">
+  {%- endfor %}
+</head>
+
+<body>
+
+<div class="page">
+  <nav class="header">
+    <div class="header__brand">
+      <img class="header__logo" src="{{ '/assets/images/logo.png' | relative_url }}" srcset="{{ '/assets/images/logo@2x.png' | relative_url }} 2x" alt="{{ site.title }}">
+      <p class="header__tagline">Native
+        iOS/Android applications backed by web
+        views</p>
+    </div>
+
+    <a href="https://github.com/robzolkos/hotwirenativedirectory/issues/new" target="_blank" class="btn btn--add-app">
+      <span class="btn__icon-swap">
+        <svg class="btn__icon btn__icon--rest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 4.25A2.25 2.25 0 0 1 4.25 2h2.5A2.25 2.25 0 0 1 9 4.25v2.5A2.25 2.25 0 0 1 6.75 9h-2.5A2.25 2.25 0 0 1 2 6.75v-2.5ZM2 13.25A2.25 2.25 0 0 1 4.25 11h2.5A2.25 2.25 0 0 1 9 13.25v2.5A2.25 2.25 0 0 1 6.75 18h-2.5A2.25 2.25 0 0 1 2 15.75v-2.5ZM11 4.25A2.25 2.25 0 0 1 13.25 2h2.5A2.25 2.25 0 0 1 18 4.25v2.5A2.25 2.25 0 0 1 15.75 9h-2.5A2.25 2.25 0 0 1 11 6.75v-2.5ZM15.25 11.75a.75.75 0 0 0-1.5 0v2h-2a.75.75 0 0 0 0 1.5h2v2a.75.75 0 0 0 1.5 0v-2h2a.75.75 0 0 0 0-1.5h-2v-2Z"/>
+        </svg>
+        <svg class="btn__icon btn__icon--hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z"/>
+        </svg>
+      </span>
+      <span>Add my app</span>
+    </a>
+  </nav>
+
+  <main class="main">
+
+    {{ content }}
+
+    <footer class="footer">
+      ❤️ Made with love by
+      <a href="https://twitter.com/robzolkos" target="_blank">Rob Zolkos</a>
+      and
+      <a href="https://github.com/robzolkos/hotwirenativedirectory/graphs/contributors" target="_blank">contributors</a>
+      on
+      <a href="https://github.com/robzolkos/hotwirenativedirectory/graphs/contributors" target="_blank">GitHub</a>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>

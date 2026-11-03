@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<ul role="list" class="apps">
+  {%- assign apps = site.data.app_directory.apps | sort_natural: "name" %}
+  {%- for app in apps %}
+    {% include app.html app=app %}
+  {%- endfor %}
+</ul>

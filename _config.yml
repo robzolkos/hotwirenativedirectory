@@ -1,0 +1,13 @@
+title: Hotwire Native Directory
+description: Discover a directory of Hotwire Native applications. Explore curated listings of web apps built with Turbo and find the latest innovations in mobile development.
+
+include:
+  - _global.css
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docs
+  - test
+  - vendor

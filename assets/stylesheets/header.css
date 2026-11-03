@@ -1,0 +1,55 @@
+@layer components {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    inline-size: 100%;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-inline-size: var(--main-width);
+    padding: 2rem 1.25rem 0;
+    z-index: 50;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+    }
+  }
+
+  .header__brand {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0%;
+    flex-direction: column;
+    gap: 0.5rem;
+    inline-size: 100%;
+    justify-content: center;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
+  .header__logo {
+    inline-size: 5rem;
+
+    @media (min-width: 640px) {
+      inline-size: 7rem;
+    }
+  }
+
+  .header__tagline {
+    font-size: var(--text-normal);
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+
+    @media (min-width: 640px) {
+      font-size: var(--text-large);
+      inline-size: 100%;
+      max-inline-size: 24rem;
+      text-align: start;
+    }
+  }
+}

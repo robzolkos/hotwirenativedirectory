@@ -1,0 +1,25 @@
+@layer components {
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex-grow: 1;
+    margin-block-start: 2.5rem;
+    padding-inline: 1.5rem;
+  }
+
+  .footer {
+    margin-block: 3rem;
+    text-align: center;
+
+    a {
+      color: var(--color-accent);
+
+      &:hover {
+        color: var(--color-accent-dark);
+      }
+    }
+  }
+}
