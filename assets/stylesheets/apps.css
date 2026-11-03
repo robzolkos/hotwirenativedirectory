@@ -1,0 +1,108 @@
+@layer components {
+  .apps {
+    display: grid;
+    gap: 3rem 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 1.5rem auto 0;
+    max-inline-size: var(--main-width);
+
+    @media (min-width: 640px) {
+      gap: 5rem 2.5rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .app {
+    background-color: var(--color-surface);
+    block-size: 100%;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-raised);
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    transition: all 300ms var(--ease);
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  .app__logo {
+    aspect-ratio: 1 / 1;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-floating);
+    inline-size: 10rem;
+    margin: -2rem auto 0;
+    object-fit: cover;
+    transition: all 300ms var(--ease);
+
+    .app:hover & {
+      transform: translateY(-1rem);
+    }
+  }
+
+  .app__details {
+    margin-block-start: 0.75rem;
+    text-align: center;
+  }
+
+  .app__name {
+    color: var(--color-ink-dark);
+    font-size: var(--text-large);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 2rem;
+  }
+
+  .app__name--link {
+    align-items: center;
+    display: inline-flex;
+    transition: all 100ms var(--ease);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .app__arrow {
+    block-size: 1.25rem;
+    inline-size: 1.25rem;
+    transition: all 300ms var(--ease);
+
+    .app:hover & {
+      transform: translateX(0.25rem);
+    }
+  }
+
+  .app__category {
+    color: var(--color-ink-light);
+    font-size: var(--text-small);
+    line-height: 1;
+  }
+
+  .app__description {
+    color: var(--color-ink-medium);
+    font-size: var(--text-small);
+    line-height: 1.25rem;
+    margin-block-start: 0.75rem;
+  }
+
+  .app__downloads {
+    display: flex;
+    gap: 0.375rem;
+    margin-block-start: auto;
+    padding-block-start: 1rem;
+
+    > li {
+      display: flex;
+      flex: 1 1 0%;
+      justify-content: center;
+    }
+  }
+}

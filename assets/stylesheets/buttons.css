@@ -1,0 +1,72 @@
+@layer components {
+  .btn {
+    --btn-duration: 200ms;
+
+    background-color: var(--color-button);
+    border-radius: var(--radius-pill);
+    color: var(--color-button-text);
+    display: inline-flex;
+    padding: 0.75rem 1.25rem;
+    transition: all var(--btn-duration) var(--ease);
+
+    &:hover {
+      background-color: var(--color-accent);
+    }
+  }
+
+  .btn__icon {
+    block-size: 1.25rem;
+    inline-size: 1.25rem;
+  }
+
+  .btn--store {
+    inline-size: 100%;
+    justify-content: center;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+
+  .btn--add-app {
+    --btn-duration: 300ms;
+
+    align-items: center;
+    font-size: var(--text-normal);
+    font-weight: 600;
+    gap: 0.5rem;
+    line-height: 1.5rem;
+    padding-inline: 2.25rem;
+
+    .btn__icon-swap {
+      position: relative;
+    }
+
+    .btn__icon {
+      inset-block-start: 50%;
+      inset-inline-start: -1rem;
+      position: absolute;
+      transition: all var(--icon-duration) var(--ease);
+    }
+
+    .btn__icon--rest {
+      --icon-duration: 100ms;
+
+      transform: translateY(-50%) scale(1);
+    }
+
+    .btn__icon--hover {
+      --icon-duration: 200ms;
+
+      transform: translateY(-50%) scale(0);
+    }
+
+    &:hover {
+      .btn__icon--rest {
+        transform: translateY(-50%) scale(0);
+      }
+
+      .btn__icon--hover {
+        transform: translateY(-50%) scale(1);
+      }
+    }
+  }
+}
