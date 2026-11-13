@@ -395,3 +395,11 @@ apps:
     ios_url: "https://apps.apple.com/app/char-gy/id1636840750"
     android_url: "https://play.google.com/store/apps/details?id=com.chargy_limited.driverapp"
     image: "chargy.webp"
+
+  - name: "Whimbrel"
+    app_category: "Travel"
+    description: "Forward flight, hotel, and restaurant confirmations from your inbox and Whimbrel turns them into a day-by-day trip itinerary."
+    web_url: "https://getwhimbrel.com"
+    ios_url: "https://apps.apple.com/us/app/whimbrel/id6806163925"
+    android_url: "https://play.google.com/store/apps/details?id=com.rowhomelabs.whimbrel"
+    image: "whimbrel.webp"
